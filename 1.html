@@ -24,6 +24,14 @@
             #post3{/*Seletor por id*/
                 background-color:rgb(146, 245, 179)
             }
+            table,td,th{
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-radius:10%
+            }
+            #paodealho:hover{
+                background-color: coral;
+            }
         </style>
     </head>
     <body>
@@ -77,6 +85,32 @@
                 <li>Cailane</li>
                 <li>Maria</li>
             </ol>
+
+            <table>
+                <td rowspan="5">Churrasco</td>
+                <th>Item</th>
+                <th>Unidade</th>
+                <th>Valor</th>
+                <tr>
+                    <td>carne</td>
+                    <td>2kg</td>
+                    <td>36,00</td>
+                </tr>
+                <tr>
+                    <td>pão de alho</td>
+                    <td>2 pacotes</td>
+                    <td>15,00</td>
+                </tr>
+                <tr>
+                    <td>Linguiça</td>
+                    <td>1kg</td>
+                    <td>20,00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>122,00</td>
+                </tr>
+            </table>
         </div> 
 
     </body>
