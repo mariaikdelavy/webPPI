@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    
+    .tabela {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .linha {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
+    
+    .bolinha {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid rgb(104, 104, 104);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .vermelha{
+        background-color: red;
+    }
+
+    .verde{
+        background-color: green;
+    }
+
+    .azul{
+        background-color: blue;
+    }
+
+    .rosa{
+        background-color: rgb(193, 112, 196);
+    }
+
+    .amarela{
+        background-color: yellow;
+    }
+
+    .laranja{
+        background-color: orange;
+    }
+
+    .rosinha{
+        background-color: lightpink;
+    }
+
+    .vinho{
+        background-color: #722F37;
+    }
+
+    .cinza{
+        background-color: gray;
+    }
+
+    .roxo{
+        background-color: purple;
+    }
+</style>
+</head>
+<body>
+    <div class="tabela">
+        <div class="linha">
+            <div class="bolinha vermelha">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha">4</div>
+            <div class="bolinha">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha">4</div>
+            <div class="bolinha">5</div>
+            <div class="bolinha verde">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha azul">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha">4</div>
+            <div class="bolinha">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha">4</div>
+            <div class="bolinha rosa">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha amarela">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha amarela">3</div>
+            <div class="bolinha">4</div>
+            <div class="bolinha amarela">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha laranja">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha laranja">4</div>
+            <div class="bolinha">5</div>
+            <div class="bolinha laranja">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha rosinha">4</div>
+            <div class="bolinha">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha vinho">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha">4</div>
+            <div class="bolinha vinho">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha cinza">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha cinza">4</div>
+            <div class="bolinha">5</div>
+            <div class="bolinha">6</div>
+        </div>
+        <div class="linha">
+            <div class="bolinha">1</div>
+            <div class="bolinha">2</div>
+            <div class="bolinha">3</div>
+            <div class="bolinha roxo">4</div>
+            <div class="bolinha roxo">5</div>
+            <div class="bolinha roxo">6</div>
+        </div>
+    </div>
+</body>
+</html>

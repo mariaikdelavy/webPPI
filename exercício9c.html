@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9c lista CSS</title>
+    <style>
+        body, html{
+            margin: 0;
+            height: 100%;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: space-between;
+            height: 100vh;
+            position: relative;
+        }
+        .quadrado{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            color: black;
+            font-size: 20px;
+            position: absolute;    
+        }
+        .vermelho{background-color: red; top:0; left:0;}     
+        .amarelo{background-color: yellow; top: 0; right: 0;}
+        .rosa{background-color: rgb(211, 64, 174); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .azul{background-color: blue; bottom: 0; left: 0;}
+        .verde{background-color: green; bottom: 0; right: 0;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quadrado vermelho">red</div>
+        <div class="quadrado amarelo">yellow</div>
+        <div class="quadrado rosa">pink</div>
+        <div class="quadrado azul">blue</div>
+        <div class="quadrado verde">green</div>
+    </div>
+</body>
+</html>

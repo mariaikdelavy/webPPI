@@ -1,0 +1,27 @@
+Podemos incluir o CSS de três formas em um documento HTML: inline, embebida ou como ficheiro externo.
+
+Inline: é a forma mais antiga, da época da utilização das tabelas como elemneto de estrutura do HTML. A definição é escrita juntamente com o código HTML, o que poderá ser de alguma utilidade em algumas situações específicas, mas é uma técnica em desuso e não recomendada.
+<p style="text-align: left">texto</p>
+
+Embebida: o código é posto dentro da HEAD da página HTML <head></head> a que queremos aplicar o CSS. Dessa forma, são aplicados apenas à página onde estão colocados. Não sendo uma boa solução para um site, afinal se quisermos mudar a CSS será necessário mudar página por página.
+<head>
+<style type="text/css">
+<!--
+body{
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: #333333;
+}
+-->
+</style>
+</head>
+
+Externa: o ficheiro .css é criado externamente ao HTML. Só é necessário fazer a ligação de ambos com um link na head.
+<head>
+<link rel="stylesheet" type="text/css" href=".../css/nomedoficheiro.css"/>
+Ou também é possível fazer a importação do ficheiro CSS.
+<style type="text/css">@import url (https://...../.css)</style>
+Ambos os métodos são realizados colocando a instrução de link ou importação na head do HTML. Usando o ficheiro externo, todas as páginas HTML de ligam ao ficheiro CSS. Ou seja, se for preciso alterar formatação de um site só será necessário alterar um ficheiro CSS, ao invés de alterar as páginas HTML uma a uma.
+Dessa forma a manutenção é mais fácil, o tamanho é reduzido, a largura de banda é reduzida e a flexibilidade é melhorada.
+A CSS externa é a forma mais usada. Porém, é possível ter num mesmo documento HTML as três formas.

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de divs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    html, body{
+        border: 1px solid black;
+        background-color: lightgray;
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border: 2px solid black;
+        outline: 1px solid blue;
+        margin: 10px;
+    }
+
+    #box1{
+        background-color: lightgreen;
+        border-top: 2px rgb(165, 255, 47);
+        border-radius: 5%;
+        padding: 20px;
+    }
+
+    #box2{
+        background-color: yellow;
+        border-radius: 5% 7% 0 0;
+    }
+
+    #box3{
+        background: linear-gradient(to right,lightgreen,yellow);
+    }
+
+    #box4{
+        background-color: lightblue;
+        border-radius: 50%;
+        text-align: center;
+        opacity: 0.5;
+        box-shadow: 10px 16px teal;
+    }
+
+    .box:hover{
+        background-color: blue;
+     }
+
+    .box:hover{
+        transform: scale(1.1);
+     }
+    </style>
+</head>
+<body>
+        <div class="box" id="box1">div-1</div>
+        <div class="box" id="box2">div-2</div>
+        <div class="box" id="box3">div-3</div>
+        <div class="box" id="box4">div-4</div>
+
+        <ol type="A">
+            <li>As divs sõa exibidas lado a lado usando o display inline-block.</li>
+            <li>As bordas são visíveisw e diferentes para cada div.</li>
+            <li>Cores de fundo diferentes são aplicadas às divs box1, box2 e box3.</li>
+            <li>O fundo do body é cinza claro e as bordas estão visíveis.</li>
+            <li>Não há margens entre os elementos HTML, body e divs.</li>
+            <li>A div box1 tem cantos arredondados de 5%.</li>
+            <li>A div box2 tem cantos arredondados de 5% no canto superior esquerdo e 7% no canto superior direito.</li>
+            <li>A div box4 se transforma em um círculo.</li>
+            <li>O texto na div box4 está centralizado.</li>
+            <li>A altura da linha da div box4 foi ajustada para ser igual à altura da div.</li>
+            <li>As outlines são visíveis em cada div.</li>
+            <li>As margens são aplicadas para separar as divs.</li>
+            <li>O box3 possui um fundo com cor gradiente linear.</li>
+            <li>O box1 tem padding de 20px.</li>
+            <li>O box4 tem opacidade alterada para 0.5.</li>
+            <li>O efeito hover muda a cor de fundo do box1 e aplica zoom no box2.</li>
+            <li>O box4 possui uma sombra suave aplicada.</li>
+            </ol>
+</body>
+</html>

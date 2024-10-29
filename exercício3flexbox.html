@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #757575;
+            font-family: Arial, sans-serif;
+        }
+
+        .user-list-container {
+            width: 300px;
+            background-color: #fff;
+            border-radius: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .user-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .user-info h4 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .user-info p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-list-container">
+        <div class="user-item">
+            <img src="avatar1.png" alt="Linda Hart" class="user-avatar">
+            <div class="user-info">
+                <h4>Linda Hart</h4>
+                <p>6765 Shady Ln Dr</p>
+            </div>
+        </div>
+
+        <div class="user-item">
+            <img src="avatar2.png" alt="Roger Medina" class="user-avatar">
+            <div class="user-info">
+                <h4>Roger Medina</h4>
+                <p>2430 Paddock Way</p>
+            </div>
+        </div>
+
+        <div class="user-item">
+            <img src="avatar3.png" alt="Dean Sullivan" class="user-avatar">
+            <div class="user-info">
+                <h4>Dean Sullivan</h4>
+                <p>6727 Airplane Ave</p>
+            </div>
+        </div>
+
+        <div class="user-item">
+            <img src="avatar4.png" alt="Elizabeth Austin" class="user-avatar">
+            <div class="user-info">
+                <h4>Elizabeth Austin</h4>
+                <p>6685 Blossom Hill Rd</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

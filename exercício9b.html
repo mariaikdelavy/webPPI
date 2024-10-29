@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9a lista CSS</title>
+    <style>
+        body, html{
+            margin: 0;
+            height: 100%;
+        }
+        div.conteiner{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+        div.item1, div.item2, div.item3, div.item4{
+            flex: 1;
+            min-width: 250px;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        div.item1{
+            background-color: blue;
+                }
+        div.item2{
+            background-color: green;
+        }
+        div.item3{
+            background-color: red;
+        }
+        div.item4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+</body>
+</html>
