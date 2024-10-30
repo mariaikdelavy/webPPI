@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout de Imagens Simples</title>
     <style>
-        /* Reset de margens e preenchimentos */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Corpo da página */
         body {
             display: flex;
             justify-content: center;
@@ -22,7 +20,6 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Contêiner principal */
         .carousel {
             display: flex;
             align-items: center;
@@ -30,7 +27,6 @@
             padding: 20px;
         }
 
-        /* Estilo das imagens pequenas */
         .small-image, .large-image {
             border-radius: 20px;
             overflow: hidden;
@@ -41,14 +37,12 @@
             height: 150px;
         }
 
-        /* Estilo da imagem principal */
         .large-image {
             width: 300px;
             height: 200px;
             position: relative;
         }
 
-        /* Texto sobre a imagem grande */
         .image-text {
             position: absolute;
             bottom: 10px;
@@ -62,7 +56,6 @@
 </head>
 <body>
     <div class="carousel">
-        <!-- Imagens pequenas -->
         <div class="small-image">
             <img src="image1.jpg" alt="Imagem 1" width="50" height="150">
         </div>
@@ -70,7 +63,6 @@
             <img src="image2.jpg" alt="Imagem 2" width="50" height="150">
         </div>
 
-        <!-- Imagem grande -->
         <div class="large-image">
             <img src="image3.jpg" alt="Imagem Grande" width="300" height="200">
             <div class="image-text">
@@ -79,7 +71,6 @@
             </div>
         </div>
 
-        <!-- Imagens pequenas -->
         <div class="small-image">
             <img src="image4.jpg" alt="Imagem 4" width="50" height="150">
         </div>
